@@ -11,20 +11,10 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
-      - name: Create Build Package
-        run: |
-          echo "✅ پروژه سالم است"
-          echo "📱 نام: Chat Room"
-          echo "🔗 سرور: Supabase متصل"
-          echo "📞 تماس صوتی/تصویری: فعال"
-          echo "👥 چت گروهی: فعال"
-          echo "📱 ثبت نام با SMS: فعال"
-          echo "🎯 برای ساخت APK به Expo Dashboard بروید:"
-          echo "https://expo.dev/projects/chat-room/builds"
-          mkdir -p build-output
-          echo "برو Expo Dashboard و Build رو بزن" > build-output/readme.txt
-      - name: Upload Instructions
+      - name: Build APK
+        run: npx expo export --platform android
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: build-instructions
-          path: build-output/
+          name: android-app
+          path: dist/
