@@ -17,8 +17,3 @@ jobs:
         run: eas build --platform android --profile production
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: production-apk
-          path: "*.apk"
