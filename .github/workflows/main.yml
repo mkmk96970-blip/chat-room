@@ -1,4 +1,4 @@
-name: Build APK
+name: Build PWA
 on: [push]
 jobs:
   build:
@@ -11,10 +11,10 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install
-      - name: Build Android App Bundle
-        run: npx expo export --platform android
-      - name: Upload Bundle
+      - name: Build PWA
+        run: npx expo export --platform web
+      - name: Upload PWA Files
         uses: actions/upload-artifact@v4
         with:
-          name: android-bundle
+          name: pwa-files
           path: dist/
