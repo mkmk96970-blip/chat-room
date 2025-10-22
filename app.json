@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Chat Room",
+    "name": "چت روم",
     "slug": "chat-room",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -26,7 +26,14 @@
       "jsEngine": "jsc"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "چت روم",
+      "shortName": "چت روم",
+      "description": "اپلیکیشن چت پیشرفته با قابلیت‌های گروهی، تماس و پیام‌رسانی",
+      "themeColor": "#2E86AB",
+      "backgroundColor": "#2E86AB",
+      "display": "standalone",
+      "orientation": "portrait"
     }
   }
 }
