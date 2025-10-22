@@ -10,7 +10,9 @@ jobs:
         with:
           node-version: '18'
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          npx expo install react-native-web react-dom @expo/metro-runtime
       - name: Build PWA
         run: npx expo export --platform web
       - name: Upload PWA Files
