@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "description": "اپلیکیشن چت پیشرفته با قابلیت‌های گروهی، تماس و پیام‌رسانی",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "ChatRoom",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "ChatRoom",
+  "start_url": "/",
+  "theme_color": "#24f2ed"
+}
