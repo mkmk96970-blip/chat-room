@@ -15,7 +15,7 @@ jobs:
           npx expo install react-native-web react-dom @expo/metro-runtime
       - name: Build PWA
         run: npx expo export --platform web
-      - name: Upload PWA Files
+      - name: Upload PWA
         uses: actions/upload-artifact@v4
         with:
           name: pwa-files
